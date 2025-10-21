@@ -292,7 +292,7 @@ public fun FlexibleBottomSheet(
           modifier = if (sheetState.isModal) {
             Modifier
               .fillMaxWidth()
-              .sheetPaddings(sheetState)
+              // .sheetPaddings(sheetState)
           } else {
             Modifier
               .fillMaxWidth()
