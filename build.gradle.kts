@@ -27,6 +27,14 @@ plugins {
   alias(libs.plugins.dokka)
 }
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 apiValidation {
   nonPublicMarkers.add("com.skydoves.flexible.core.InternalFlexibleApi")
 }
